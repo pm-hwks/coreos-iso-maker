@@ -1,0 +1,27 @@
+---
+gateway: 10.15.4.1
+netmask: 255.255.254.0
+interface: enp24s0f0np0
+dns:
+  - 10.15.6.19
+  - 10.15.6.15
+webserver_url: 10.15.6.121
+webserver_port: 8080
+
+# Ignition subpath in http server (optionnal, defaults to nothing)
+webserver_ignition_path: ignition
+
+# Drive to install RHCOS
+install_drive: sdb
+
+# Chose the binary architecture
+# x86_64 or ppc64le
+arch: "x86_64"
+
+ocp_version: 4.7.7
+iso_checksum: e763b79edc4c7958bffdb222cc4e5e8acbf6b7e447d4342009f908ab071b7c95
+iso_name: rhcos-{{ ocp_version }}-x86_64-live.x86_64.iso
+
+ocp_rhcos_bios_version: 4.6.8
+rhcos_bios: rhcos-{{ ocp_rhcos_bios_version }}-x86_64-metal.x86_64.raw.gz
+...
