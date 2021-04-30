@@ -24,4 +24,5 @@ iso_name: rhcos-{{ ocp_version }}-x86_64-live.x86_64.iso
 
 ocp_rhcos_bios_version: 4.6.8
 rhcos_bios: rhcos-{{ ocp_rhcos_bios_version }}-x86_64-metal.x86_64.raw.gz
+rhcos_rootfs: rhcos-{{ ocp_rhcos_bios_version }}-x86_64-live-rootfs.x86_64.img
 ...
