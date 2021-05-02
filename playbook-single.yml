@@ -130,9 +130,9 @@
         path: /mnt/iso
         state: absent
 
-    # - name: Remove ISO copy
-    #   file:
-    #     path: /tmp/rhcos-iso
-    #     state: absent
+    - name: Remove ISO copy
+      file:
+        path: /tmp/rhcos-iso
+        state: absent
     become: true
 ...
