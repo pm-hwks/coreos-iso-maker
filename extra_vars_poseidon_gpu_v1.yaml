@@ -1,7 +1,7 @@
 ---
 gateway: 10.15.4.1
 netmask: 255.255.254.0
-interface: enp24s0f0np0
+interface: p3p1
 dns:
   - 10.15.6.19
   - 10.15.6.15
@@ -18,9 +18,8 @@ install_drive: sdb
 # x86_64 or ppc64le
 arch: "x86_64"
 
-ocp_version: 4.6.8
-#4.7.7#iso_checksum: e763b79edc4c7958bffdb222cc4e5e8acbf6b7e447d4342009f908ab071b7c95
-iso_checksum: 38d8e14491758b8b7052cb8e82704fe25b042875a3fbaa5298bd4f1fb1fc416e
+ocp_version: 4.7.7
+iso_checksum: e763b79edc4c7958bffdb222cc4e5e8acbf6b7e447d4342009f908ab071b7c95
 iso_name: rhcos-{{ ocp_version }}-x86_64-live.x86_64.iso
 
 ocp_rhcos_bios_version: 4.6.8
